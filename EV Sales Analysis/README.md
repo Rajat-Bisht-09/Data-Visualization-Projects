@@ -86,6 +86,8 @@ Tableau is used for creating dashboards, calculated fields, parameters and analy
         
         CAGR = [(Ending Value / Beginning Value) ** 1/n] -1
 ### Calculated Fields & Parameters:
+#### Calculated Fields-
+
 - Date Part = DATEADD('month',9,DATE(TRIM(LEFT([Date],9))))
 - Average Price = IF [Vehicle Category]='2-Wheelers' THEN 85000 ELSE 1500000 END
 - Revenue = [Average Price ]*[Electric Vehicles Sold]
@@ -105,4 +107,4 @@ Tableau is used for creating dashboards, calculated fields, parameters and analy
 - Sales 2030 = ROUND(IF [Vehicle Category (Electric Vehicle Sales By State.Csv)]=="2-Wheelers" THEN POWER(1+0.922,6)* [Electric Vehicles Sold (Electric Vehicle Sales By State.Csv)] ELSE POWER(1+1.163,6)* [Electric Vehicles Sold (Electric Vehicle Sales By State.Csv)]END)
 - GR 2022 Vs 2024 = ZN((SUM([Revenue])- LOOKUP(SUM([Revenue]), -2)) / LOOKUP(SUM([Revenue]),-2))
 - GR 2023 Vs 2024 = ZN((SUM([Revenue])- LOOKUP(SUM([Revenue]), -1)) / LOOKUP(SUM([Revenue]),-1))
-- 
+#### Parameters-
