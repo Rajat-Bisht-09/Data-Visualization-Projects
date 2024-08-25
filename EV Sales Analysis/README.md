@@ -86,3 +86,23 @@ Tableau is used for creating dashboards, calculated fields, parameters and analy
         
         CAGR = [(Ending Value / Beginning Value) ** 1/n] -1
 ### Calculated Fields & Parameters:
+- Date Part = DATEADD('month',9,DATE(TRIM(LEFT([Date],9))))
+- Average Price = IF [Vehicle Category]='2-Wheelers' THEN 85000 ELSE 1500000 END
+- Revenue = [Average Price ]*[Electric Vehicles Sold]
+- CY EV Sales = IF YEAR([Date Part]) = YEAR([Current Year]) THEN [Electric Vehicles Sold] END
+- CY Total Sales = IF YEAR([Date Part]) = YEAR([Current Year]) THEN [Total Vehicles Sold] END
+- CY Revenue = IF YEAR([Date Part]) = YEAR([Current Year]) THEN [Revenue] END
+- Index = INDEX()
+- PY EV Sales = IF YEAR([Date Part]) = YEAR([Previous Year]) THEN [Electric Vehicles Sold] END
+- PY Total Sales = IF YEAR([Date Part]) = YEAR([Previous Year]) THEN [Total Vehicles Sold] END
+- PY Revenue = IF YEAR([Date Part]) = YEAR([Previous Year]) THEN [Revenue] END
+- YoY EV Sales = (SUM([CY EV Sales])-SUM([PY EV Sales]))/SUM([PY EV Sales])
+- YoY Total Sales = (SUM([CY Total Sales])-SUM([PY Total Sales]))/SUM([PY Total Sales])
+- YoY Revenue = (SUM([CY Revenue])-SUM([PY Revenue]))/SUM([PY Revenue])
+- Penetration Rate = SUM([Electric Vehicles Sold (Electric Vehicle Sales By State.Csv)])/SUM([Total Vehicles Sold])
+- CAGR EV Sold = ZN(POWER(ZN(SUM([Electric Vehicles Sold]))/LOOKUP(ZN(SUM([Electric Vehicles Sold])),-[N Years]), ZN(1/[N Years])) - 1)
+- CAGR Total Vehicle Sold = POWER(ZN(SUM([Total Vehicles Sold]))/LOOKUP(ZN(SUM([Total Vehicles Sold])),-[N Years]),1/ZN([N Years])) - 1
+- Sales 2030 = ROUND(IF [Vehicle Category (Electric Vehicle Sales By State.Csv)]=="2-Wheelers" THEN POWER(1+0.922,6)* [Electric Vehicles Sold (Electric Vehicle Sales By State.Csv)] ELSE POWER(1+1.163,6)* [Electric Vehicles Sold (Electric Vehicle Sales By State.Csv)]END)
+- GR 2022 Vs 2024 = ZN((SUM([Revenue])- LOOKUP(SUM([Revenue]), -2)) / LOOKUP(SUM([Revenue]),-2))
+- GR 2023 Vs 2024 = ZN((SUM([Revenue])- LOOKUP(SUM([Revenue]), -1)) / LOOKUP(SUM([Revenue]),-1))
+- 
