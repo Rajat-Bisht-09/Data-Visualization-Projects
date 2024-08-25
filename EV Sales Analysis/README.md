@@ -1,9 +1,7 @@
 # Problem Statement
 
 AtliQ Motors is an automotive giant from the USA specializing in electric vehicles (EV). In the last 5 years, their market share rose to 25% in electric and hybrid vehicles segment in North America. As a part of their expansion plans, they wanted to launch their bestselling models in India where their market share is less than 2%. Bruce Haryali, the chief of AtliQ Motors India wanted to do a detailed market study of existing EV/Hybrid market in India before proceeding further. Bruce gave this task to the data analytics team of AtliQ motors and Peter Pandey is the data analyst working in this team.
-
 ## Questions:
-
 ###  Preliminary Questions:
 * List the top 3 and bottom 3 makers for the fiscal years 2023 and 2024 in terms of the number of 2-wheelers sold.
 * Identify the top 5 states with the highest penetration rate in 2-wheeler and 4-wheeler EV sales in FY 2024.
@@ -15,13 +13,47 @@ AtliQ Motors is an automotive giant from the USA specializing in electric vehicl
 * What are the peak and low season months for EV sales based on the data from 2022 to 2024?
 * What is the projected number of EV sales (including 2-wheelers and 4-wheelers) for the top 10 states by penetration rate in 2030, based on the compounded annual growth rate (CAGR) from previous years
 * Estimate the revenue growth rate of 4-wheeler and 2-wheelers EVs in India for 2022 vs 2024 and 2023 vs 2024, assuming an average unit price. Average Price =85K for 2-Wheeler, 15L for 4-Wheeler
-
-
 ### Secondary Questions
-
 * What are the primary reasons for customers choosing 4-wheeler EVs in 2023 and 2024 (cost savings, environmental concerns, government incentives)?
 * How do government incentives and subsidies impact the adoption rates of 2-wheelers and 4-wheelers? Which states in India provided most subsidies?
 * How does the availability of charging stations infrastructure correlate with the EV sales and penetration rates in the top 5 states?
 * Who should be the brand ambassador if AtliQ Motors launches their EV/Hybrid vehicles in India and why?
 * Which state of India is ideal to start the manufacturing unit? (Based on subsidies provided, ease of doing business, stability in governance etc.)
 * Your top 3 recommendations for AtliQ Motors.
+## Data Collection
+The dataset is taken from the Vahan Sewa. Thanks to the Vahan Sewa for 
+providing datasets for public access which is a great learning asset - feel free to explore 
+them here: Vahan Sewa 
+* Dataset required to answer preliminary analysis questions. 
+* Metadata 
+* Supporting documents
+## Data Preprocessing
+### Tools Used:
+* MS-Excel
+* Tableau
+* Canva
+### Data 
+* dim_date.csv
+* electric_vehicle_sales_by_makers.csv
+* electric_vehicle_sales_by_state.csv
+### Data Description
+#### dim_date.csv 
+- date: The specific date for which the data is relevant. Format: DD-MMM-YY. (Data is recorded on a monthly basis)
+- fiscal_year: The fiscal year to which the date belongs. This is useful for financial and business analysis.
+- quarter: The fiscal quarter to which the date belongs. Fiscal quarters are typically divided as Q1, Q2, Q3, and Q4.
+#### electric_vehicle_sales_by_makers.csv
+- date: The date on which the sales data was recorded. Format: DD-MMM-YY. (Data is recorded on a monthly basis)
+- vehicle_category: The category of the vehicle, specifying whether it is a 2-Wheeler or a 4-Wheeler.
+- maker: The name of the manufacturer or brand of the electric vehicle.
+- electric_vehicles_sold: The number of electric vehicles sold by the specified maker in the given category on the given date.
+#### electric_vehicle_sales_by_state.csv
+- date: The date on which the data was recorded. Format: DD-MMM-YY. (Data is recorded on a monthly basis)
+- state: The name of the state where the sales data is recorded. This indicates the geographical location within India.
+- vehicle_category: The category of the vehicle, specifying whether it is a 2-Wheeler or a 4-Wheeler.
+- electric_vehicles_sold: The number of electric vehicles sold in the specified state and category on the given date.
+- total_vehicles_sold: The total number of vehicles (including both electric and non-electric) sold in the specified state and category on the given date.
+### Data Cleaning
+- MS Excel, Power Query to clean and transform raw data.
+- Removed duplicate data.
+- TRIM() to clean unwanted spaces in cells.
+- State DND -> Dadra & Nagar Haveli and Daman & Diu, Andaman & Nicobar Islands -> Andaman & Nicobar
