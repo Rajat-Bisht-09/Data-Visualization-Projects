@@ -107,4 +107,22 @@ Tableau is used for creating dashboards, calculated fields, parameters and analy
 - Sales 2030 = ROUND(IF [Vehicle Category (Electric Vehicle Sales By State.Csv)]=="2-Wheelers" THEN POWER(1+0.922,6)* [Electric Vehicles Sold (Electric Vehicle Sales By State.Csv)] ELSE POWER(1+1.163,6)* [Electric Vehicles Sold (Electric Vehicle Sales By State.Csv)]END)
 - GR 2022 Vs 2024 = ZN((SUM([Revenue])- LOOKUP(SUM([Revenue]), -2)) / LOOKUP(SUM([Revenue]),-2))
 - GR 2023 Vs 2024 = ZN((SUM([Revenue])- LOOKUP(SUM([Revenue]), -1)) / LOOKUP(SUM([Revenue]),-1))
+- Vehicle Category Parameter = [Vehicle Category (Electric Vehicle Sales By State.Csv)] = [Parameters].[Vehicle Category] AND [Vehicle Category] = [Parameters].[Vehicle Category]
 #### Parameters-
+- Current Year 
+
+  ![image](https://github.com/user-attachments/assets/3e584f2c-5d33-4048-a195-2ecf3683d9ee)
+
+
+- Previous Year
+
+  ![image](https://github.com/user-attachments/assets/238b756c-b3b5-459c-bf93-5a2fa5541c71)
+
+- N Years
+
+  ![image](https://github.com/user-attachments/assets/0cf747e6-d16a-4e52-a2c8-265b9f2fa456)
+
+
+- Vehicle Category
+
+  ![image](https://github.com/user-attachments/assets/5effbbb8-48fe-4e54-9d06-71e8c5b26056)
