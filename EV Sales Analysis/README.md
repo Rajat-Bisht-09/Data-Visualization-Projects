@@ -151,5 +151,7 @@ Tableau is used for creating dashboards, calculated fields, parameters and analy
 - States are also taking initiatives to boost EV adoption, Meghalaya leads with 28.47% growth. Goa, Karnataka, Delhi are also taking measures for faster adoption by consumers.
 
 ## Reviews 
-Thankyou for your reading, any suggestions please share with me in LinkedIn : [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajat-bisht-a71b21100/)<br>
+Thankyou for reading, any suggestions please share with me in LinkedIn :<br>
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajat-bisht-a71b21100/)
+
 Live Dashboard Link: <a href = "https://public.tableau.com/app/profile/rajat.bisht8107/viz/EvAnalysis_17245602993660/FrontPage">Click Me</a> 
