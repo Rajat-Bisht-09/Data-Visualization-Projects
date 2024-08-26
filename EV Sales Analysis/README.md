@@ -140,4 +140,13 @@ Tableau is used for creating dashboards, calculated fields, parameters and analy
 
 
 ## Data Interpretation
+- 2.07M EV sold as far in two years, generating a total revenue of ₹392.03B.
+- Ola Electric tops the market in 2-Wheelers segment, and Tata Motors in 4-Wheelers segment.
+- Maharashtra has the highest EV sold all over India, whereas Sikkim has not been able to sold one unit.
+- Goa has the highest penetration rate followed by Kerala, Karnataka and Maharashtra.
+- Rajasthan and Gujarat shows significant decline in Penetration Rate from 2023 to 2024.
+- Tata Motors shows the peak in EV sales in 4-Wheelers category in quarter trends. Mahindra & Mahindra showed some progress but decline at the end of 2024. Other companies show stable progess.
+- End months of year shows huge sales as compared to beginning of year, January to March registers low sales in overall EV sales.
+- In 4-Wheelers segment, the craze for luxurious EV model has also risen, BMW India also launching its EV model, which is a big hit as Compounded Annual Growth Rate shows 1141% growth in two years, followed by Volvo Auto India.
+- States are also taking initiatives to boost EV adoption, Meghalaya leads with 28.47% growth. Goa, Karnataka, Delhi are also taking measures for faster adoption by consumers.
 
