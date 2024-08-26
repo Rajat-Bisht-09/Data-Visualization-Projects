@@ -72,7 +72,7 @@ them here: Vahan Sewa
 - Removed duplicate data.
 - TRIM() to clean unwanted spaces in cells.
 - State DND -> Dadra & Nagar Haveli and Daman & Diu, Andaman & Nicobar Islands -> Andaman & Nicobar
-## Data Visualization & Analysis
+## Data Visualization
 Tableau is used for creating dashboards, calculated fields, parameters and analysis of the data.
 ### Key Points:
 * Fiscal Year: The fiscal year is a one-year period used for financial reporting and budgeting, starting on April 1st and ending on March 31st of the following year in India.
@@ -126,3 +126,18 @@ Tableau is used for creating dashboards, calculated fields, parameters and analy
 - Vehicle Category
 
   ![image](https://github.com/user-attachments/assets/5effbbb8-48fe-4e54-9d06-71e8c5b26056)
+
+
+### Visuals
+
+![image](https://github.com/user-attachments/assets/25babb64-86e9-4e10-8d64-e3155a8b1754)
+
+
+![image](https://github.com/user-attachments/assets/998337d9-6341-4d77-8ad6-df3ccb07752b)
+
+
+![image](https://github.com/user-attachments/assets/f6dae6cf-b9f0-4657-a992-1fce1b47ac1a)
+
+
+## Data Interpretation
+
