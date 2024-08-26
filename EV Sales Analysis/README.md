@@ -150,3 +150,6 @@ Tableau is used for creating dashboards, calculated fields, parameters and analy
 - In 4-Wheelers segment, the craze for luxurious EV model has also risen, BMW India also launching its EV model, which is a big hit as Compounded Annual Growth Rate shows 1141% growth in two years, followed by Volvo Auto India.
 - States are also taking initiatives to boost EV adoption, Meghalaya leads with 28.47% growth. Goa, Karnataka, Delhi are also taking measures for faster adoption by consumers.
 
+## Reviews 
+Thankyou for your reading, any suggestions please share with me in LinkedIn : [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajat-bisht-a71b21100/)<br>
+Live Dashboard Link: <a href = "https://public.tableau.com/app/profile/rajat.bisht8107/viz/EvAnalysis_17245602993660/FrontPage">Click Me</a> 
