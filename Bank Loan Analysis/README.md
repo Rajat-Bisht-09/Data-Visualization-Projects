@@ -37,3 +37,5 @@ This project focuses on analyzing bank loan data using a combination of **MS SQL
 | `Interest Rate` | annual cost of borrowing expressed as a percentage |
 | `Loan Amount` | total borrowed sum |
 
+## Dashboard
+To the Dashboard : <a href= "http://tiny.cc/i8ynzz"> Click here for Data Visulaization </a>
