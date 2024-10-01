@@ -39,3 +39,26 @@ This project focuses on analyzing bank loan data using a combination of **MS SQL
 
 ## Dashboard
 To the Dashboard : <a href= "http://tiny.cc/i8ynzz"> Click here for Data Visulaization </a>
+
+## Measures
+1. Total Loan Applications = COUNT(financial_loan[id])
+2. MTD Loan Applications = CALCULATE(TOTALMTD([Total Loan Applications], 'Date Table'[Date]))
+3. PMTD Loan Applications = CALCULATE([Total Loan Applications], DATESMTD(DATEADD('Date Table'[Date],-1,MONTH)))
+4. MoM Loan Applications = ([MTD Loan Applications]-[PMTD Loan Applications])/[PMTD Loan Applications]
+5. Total Funded Amount = SUM(financial_loan[loan_amount])
+6. MTD Funded Amount = CALCULATE(TOTALMTD([Total Funded Amount], 'Date Table'[Date]))
+7. PMTD Funded Amount = CALCULATE([Total Funded Amount], DATESMTD(DATEADD('Date Table'[Date],-1,MONTH)))
+8. MoM Funded Amount = ([MTD Funded Amount]-[PMTD Funded Amount])/[PMTD Funded Amount]
+9. Total Amount Received = SUM(financial_loan[total_payment])
+10. MTD Amount Received = CALCULATE(TOTALMTD([Total Amount Received], 'Date Table'[Date]))
+11. PMTD Amount Received = CALCULATE([Total Amount Received], DATESMTD(DATEADD('Date Table'[Date],-1,MONTH)))
+12. MoM Amount Received = ([MTD Amount Received]-[PMTD Amount Received])/[PMTD Amount Received]
+13. Avg Interest Rate = AVERAGE(financial_loan[int_rate])
+14. MTD Avg Rate = CALCULATE(TOTALMTD([Avg Interest Rate], 'Date Table'[Date]))
+15. PMTD Avg Rate = CALCULATE([Avg Interest Rate], DATESMTD(DATEADD('Date Table'[Date],-1,MONTH)))
+16. MoM Avg Rate = ([MTD Avg Rate]-[PMTD Avg Rate])/[PMTD Avg Rate]
+17. Avg DTI = AVERAGE(financial_loan[dti])
+18. MTD DTI = CALCULATE(TOTALMTD([Avg DTI], 'Date Table'[Date]))
+19. PMTD DTI = CALCULATE([Avg DTI], DATESMTD(DATEADD('Date Table'[Date],-1,MONTH)))
+20. MoM DTI = ([MTD DTI]-[PMTD DTI])/[PMTD DTI]
+21. 
