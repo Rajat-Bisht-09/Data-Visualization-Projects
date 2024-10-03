@@ -40,6 +40,15 @@ This project focuses on analyzing bank loan data using a combination of **MS SQL
 ## Dashboard
 To the Dashboard : <a href= "http://tiny.cc/i8ynzz"> Click here for Data Visulaization </a>
 
+## Create A Date Table
+- Click on any column of the "financial loan"
+- Click on "Table Tools"
+- Select "New Table"
+- Date Table = CALENDAR(MIN(financial_loan[issue_date]), MAX(financial_loan[issue_date]))
+- Now create columns -> Click on "New Column"
+- Month = FORMAT('Date Table'[Date], "mmm")
+- Month Number = MONTH('Date Table'[Date].[Date])
+
 ## Measures
 1. Total Loan Applications = COUNT(financial_loan[id])
 2. MTD Loan Applications = CALCULATE(TOTALMTD([Total Loan Applications], 'Date Table'[Date]))
@@ -61,4 +70,12 @@ To the Dashboard : <a href= "http://tiny.cc/i8ynzz"> Click here for Data Visulai
 18. MTD DTI = CALCULATE(TOTALMTD([Avg DTI], 'Date Table'[Date]))
 19. PMTD DTI = CALCULATE([Avg DTI], DATESMTD(DATEADD('Date Table'[Date],-1,MONTH)))
 20. MoM DTI = ([MTD DTI]-[PMTD DTI])/[PMTD DTI]
-21. 
+21. Good Loan % = (CALCULATE([Total Loan Applications],financial_loan[Good Vs Bad Loan]="Good Loan")) / [Total Loan Applications]
+22. Good Loan Applications = CALCULATE([Total Loan Applications], financial_loan[Good Vs Bad Loan]="Good Loan")
+23. Good Loan Funded Amount = CALCULATE([Total Funded Amount], financial_loan[Good Vs Bad Loan]="Good Loan")
+24. Good Loan Amount Received = CALCULATE([Total Amount Received], financial_loan[Good Vs Bad Loan]="Good Loan")
+25. Bad Loan % = (CALCULATE([Total Loan Applications],financial_loan[Good Vs Bad Loan]="Bad Loan")/[Total Loan Applications])
+26. Bad Loan Applications = CALCULATE([Total Loan Applications], financial_loan[Good Vs Bad Loan]="Bad Loan")
+27. Bad Loan Funded Amount = CALCULATE([Total Funded Amount], financial_loan[Good Vs Bad Loan]="Bad Loan")
+28. Bad Loan Amount Received = CALCULATE([Total Amount Received], financial_loan[Good Vs Bad Loan]="Bad Loan")
+29. 
