@@ -49,6 +49,12 @@ To the Dashboard : <a href= "http://tiny.cc/i8ynzz"> Click here for Data Visulai
 - Month = FORMAT('Date Table'[Date], "mmm")
 - Month Number = MONTH('Date Table'[Date].[Date])
 
+## Create mapping of Date Table and financial_loan
+Drag "Date" from "Date Table" to "issue_date" of "financial_loan"
+
+![image](https://github.com/user-attachments/assets/f647623b-77f7-4236-8f14-4960144d3472)
+
+
 ## Measures
 1. Total Loan Applications = COUNT(financial_loan[id])
 2. MTD Loan Applications = CALCULATE(TOTALMTD([Total Loan Applications], 'Date Table'[Date]))
@@ -78,4 +84,10 @@ To the Dashboard : <a href= "http://tiny.cc/i8ynzz"> Click here for Data Visulai
 26. Bad Loan Applications = CALCULATE([Total Loan Applications], financial_loan[Good Vs Bad Loan]="Bad Loan")
 27. Bad Loan Funded Amount = CALCULATE([Total Funded Amount], financial_loan[Good Vs Bad Loan]="Bad Loan")
 28. Bad Loan Amount Received = CALCULATE([Total Amount Received], financial_loan[Good Vs Bad Loan]="Bad Loan")
-29. 
+
+## Create Field Parameter
+- Click `Modelling` -> `New Parameter` -> `Fields` from menu tab
+
+![Screenshot 2024-10-03 140918](https://github.com/user-attachments/assets/177a7404-0c65-44ed-94c7-c81cbaa1b443)
+
+
